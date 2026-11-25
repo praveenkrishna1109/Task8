@@ -1,69 +1,60 @@
-Task 8 – Laundry Services Website
+Task 8 – Laundry Services Landing Page
 📌 Project Overview
 
-This project is a responsive Laundry Services landing page built using HTML5 and CSS3. It provides a clean and simple user interface to showcase laundry services and make it easy for users to navigate the website.
+This project is a responsive Laundry Services landing page built using HTML and CSS. It features a modern navigation bar, an attractive hero section, and a mobile-friendly navigation menu.
 
-The website includes a responsive navigation bar, a hero section, and a CSS-only hamburger menu for smaller screens.
+The landing page promotes laundry services by highlighting convenience, quality, and easy service booking.
 
 🚀 Features
-Responsive Navigation Bar: Displays navigation links on larger screens.
-Hamburger Menu: CSS hover-based dropdown navigation for smaller screens.
-Hero Section: Includes a headline, description, and call-to-action button.
-Laundry Image: Displays an illustrative image alongside the hero content.
-CSS Styling: Uses Flexbox, media queries, hover effects, and transitions.
-Font Awesome Icons: Uses Font Awesome for the hamburger icon.
-No JavaScript: All interactions and styling are implemented using HTML and CSS.
+Navigation Bar: Includes Logo, Home, Services, About Us, and Contact Us links.
+Username Button: A simple button displayed on desktop screens.
+Hero Section: Contains a catchy heading, description, and call-to-action button.
+Highlighted Text: Uses a different color to emphasize important text.
+Laundry Image: Displays a laundry-related image alongside the hero content.
+Responsive Design: Adapts to different screen sizes using CSS media queries.
+Mobile Navigation: Includes a hamburger menu for smaller screens.
+Hover Effects: Interactive hover effects on navigation menu items.
 🛠️ Technologies Used
-HTML5
-CSS3
-CSS Flexbox
-CSS Media Queries
-Font Awesome Icons
+HTML5 – For webpage structure.
+CSS3 – For styling and responsive layout.
+Font Awesome – For the hamburger menu icon.
+Flexbox – For layout alignment and positioning.
+Media Queries – For responsive design.
 📂 Project Structure
 text
-Task-7/
+Task-8/
 │
 ├── index.html
 ├── style.css
 ├── Laundry.png
 └── README.md
 
-💻 Website Sections
-1. Navigation Bar
-Logo
-Home
-Services
-About Us
-Contact Us
-Username button
-Hamburger menu for smaller screens
-2. Hero Section
-Main heading: Revitalize Your Clothes With Expert Laundry Services!
-Short description of laundry services
-Book a Service Today button
-Laundry illustration
-3. Responsive Design
+💻 How to Run the Project
+Clone this repository:
+bash
+git clone <repository-url>
 
-The website uses CSS media queries to adjust the layout for different screen sizes.
+Open the project folder.
+Make sure all project files are in the same directory.
+Open index.html in your browser.
+📱 Responsive Design
 
-Screen Size	Layout
-Desktop	Full navigation bar and horizontal hero section
-Tablet	Adjusted navigation and hero section
-Mobile (316px and below)	Hamburger menu and vertically stacked hero section
-🎨 CSS Concepts Used
-Universal selector (*)
-Flexbox (display: flex)
-Hover effects (:hover)
-Positioning (relative, absolute)
-Media queries (@media)
-Box sizing (box-sizing)
-CSS transitions
-Background colors and shadows
-▶️ How to Run the Project
-Download or clone the project.
-Make sure all project files are in the same folder.
-Open the index.html file in your browser.
-Resize the browser window to test the responsive layout.
-👨‍💻 Project Purpose
+The webpage is designed to work on both desktop and mobile devices.
 
-This project was created as part of a frontend development practice task to improve understanding of HTML, CSS, Flexbox, responsive web design, and CSS-only navigation menus.
+Desktop: Displays the full navigation menu, username button, and side-by-side hero section.
+Mobile: Hides the desktop navigation and username button, displays a hamburger menu, and stacks the hero content vertically.
+🎯 Learning Outcomes
+
+Through this project, I practiced:
+
+Creating webpage layouts using HTML.
+Styling elements using CSS.
+Using Flexbox for responsive alignment.
+Implementing CSS media queries.
+Creating a mobile navigation menu.
+Adding hover effects and transitions.
+👨‍💻 Author
+
+Created as part of Task 8 – Responsive Web Design Practice.
+
+⭐ Thank you for checking out this project!

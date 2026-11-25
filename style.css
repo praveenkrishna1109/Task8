@@ -1,226 +1,144 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    width: 100%;
-    min-height: 100vh;
-    overflow-x: hidden;
-    font-family: Arial, sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
 }
 .navBar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 5%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
 }
 .navBar h1 {
-    padding: 10px;
+  padding: 10px;
 }
 .navBar ul {
-    display: flex;
-    list-style: none;
+  display: flex;
+  list-style: none;
 }
 .navBar ul li {
-    padding: 20px;
-    cursor: pointer;
+  padding: 20px;
+  cursor: pointer;
 }
 .navBar li:hover {
-    background-color: rgb(184, 221, 239);
-    border-radius: 10px;
+  background-color: rgb(184, 221, 239);
+  border-radius: 10px;
 }
 .navBar button {
-    padding: 10px 30px;
-    height: 45px;
-    border-radius: 10px;
-    border: none;
-    color: blue;
-    background-color: rgb(132, 238, 248);
-    cursor: pointer;
+  padding: 10px 30px;
+  height: 45px;
+  border-radius: 10px;
+  border: none;
+  color: blue;
+  background-color: rgb(132, 238, 248);
+  cursor: pointer;
 }
 .hero {
-    width: 100%;
-    min-height: calc(100vh - 70px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 5%;
+  width: 100%;
+  min-height: calc(100vh - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 5%;
 }
 .left {
-    width: 50%;
-    padding: 20px 5%;
+  width: 50%;
+  padding: 20px 5%;
 }
 #highlight {
-    color: rgb(47, 173, 192);
+  color: rgb(47, 173, 192);
 }
 .left p {
-    font-size: 16px;
-    margin-top: 20px;
+  font-size: 16px;
+  margin-top: 20px;
 }
 .left button {
-    padding: 10px 30px;
-    margin-top: 20px;
-    min-height: 45px;
-    border-radius: 10px;
-    border: none;
-    color: white;
-    background-color: rgb(47, 173, 192);
-    cursor: pointer;
+  padding: 10px 30px;
+  margin-top: 20px;
+  min-height: 45px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: rgb(47, 173, 192);
+  cursor: pointer;
 }
 .right {
-    width: 50%;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .right img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    object-fit: contain;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: contain;
 }
 
+.menu-container {
+  display: none;
+}
 .toggle_Btn {
-    display: none;
-    position: relative;
-    cursor: pointer;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 25px;
+  position: relative;
+  z-index: 11;
 }
-.toggle_Btn i {
-    font-size: 25px;
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+  transform: translateX(100%);
+  transition: transform 0.4s ease;
+  z-index: 10;
 }
-.toggle_Btn ul {
-    display: none;
-    position: absolute;
-    right: 0;
-    top: 100%;
-    width: 180px;
-    color: white;
-    background-color: black;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    border-radius: 10px;
-    flex-direction: column;
-    z-index: 10;
+.toggle_Btn:focus + .mobile-menu {
+  transform: translateX(0);
 }
-.toggle_Btn ul li {
-    padding: 15px;
-    list-style: none;
-    cursor: pointer;
+.mobile-menu li {
+  padding: 20px;
+  cursor: pointer;
 }
-.toggle_Btn ul li:hover {
-    background-color: rgb(36, 145, 199);
-    border-radius: 10px;
+.mobile-menu li:hover {
+  background-color: rgb(36, 145, 199);
 }
-.toggle_Btn:hover ul {
-    display: flex;
-}
-
-
 @media screen and (max-width: 768px) {
-    .navBar {
-        padding: 10px 3%;
-    }
-    .navBar h1 {
-        font-size: 25px;
-    }
-    .navBar ul li {
-        padding: 12px;
-        font-size: 14px;
-    }
-    .navBar button {
-        padding: 10px 15px;
-    }
-    .hero {
-        padding: 30px 3%;
-    }
-    .left {
-        width: 50%;
-        padding: 15px;
-    }
-    .left h1 {
-        font-size: 27px;
-    }
-    .left p {
-        font-size: 14px;
-    }
-    .right {
-        width: 50%;
-        padding: 10px;
-    }
+  .navBar > ul {
+    display: none;
+  }
+  .navBar > button:not(.toggle_Btn) {
+    display: none;
+  }
+  .menu-container {
+    display: block;
+  }
+  .hero {
+    flex-direction: column;
+  }
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .left {
+    text-align: center;
+  }
 }
-@media screen and (max-width: 316px) {
-    .navBar {
-        padding: 12px 15px;
-    }
-    .navBar h1 {
-        font-size: 24px;
-        padding: 5px;
-    }
-    .navBar ul {
-        display: none;
-    }
-    .navBar button {
-        padding: 10px 15px;
-        height: 40px;
-        font-size: 12px;
-    }
-    .hero {
-        flex-direction: column;
-        width: 100%;
-        padding: 15px;
-        min-height: auto;
-    }
-    .left {
-        width: 100%;
-        padding: 20px 5px;
-        text-align: center;
-    }
-    .left h1 {
-        font-size: 27px;
-    }
-    .left p {
-        font-size: 14px;
-        margin-top: 15px;
-    }
-    .left button {
-        padding: 12px 20px;
-        margin-top: 20px;
-        font-size: 13px;
-    }
-    .right {
-        width: 100%;
-        padding: 15px 5px;
-    }
-    .right img {
-        width: 100%;
-        max-width: 350px;
-        height: auto;
-    }
-    .toggle_Btn{
-        display: block;
-    }
-}
-/* @media screen and (max-width: 320px) {
-    .navBar h1 {
-        font-size: 20px;
-    }
-    .navBar button {
-        padding: 8px 12px;
-        font-size: 11px;
-    }
-    .left h1 {
-        font-size: 23px;
-    }
-    .left p {
-        font-size: 13px;
-    }
-    .left button {
-        padding: 10px 15px;
-        font-size: 12px;
-    }
-    .toggle_Btn{
-        display: block;
-    }
-} */
